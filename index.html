@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/utilities.css">
+
+  <title>Frontend Mentor | Password Generator App</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Password Generator</h1>
+    </div>
+
+    <!-- GENERATED PASSWORD -->
+    <div class="generated-password">
+      <div class="flex-container">
+        <div class="password">
+          <span>PTx1f5DaFX</span>
+        </div>
+        <div class="copy">
+          <img src="/assets/images/icon-copy.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- PASSWORD GENERATOR -->
+    <div class="generator">
+      <div class="password-length">
+        <div class="content">
+          <div class="text">
+            <span>Character Length</span>
+          </div>
+          <div class="number">
+            <span id="password-length">10</span>
+          </div>
+        </div>
+        <div class="password-length-selector">
+          <input type="range" id="range" name="range" min="0" max="20" value="10" step="1">
+        </div>
+      </div>
+      <div class="password-preferences">
+        <div class="preference">
+          <div class="check">
+            <input type="checkbox" checked>
+          </div>
+          <div class="text">
+            <span>Include Uppercase Letters</span>
+          </div>
+        </div>
+        <div class="preference">
+          <div class="check">
+            <input type="checkbox" checked>
+          </div>
+          <div class="text">
+            <span>Include Lowercase Letters</span>
+          </div>
+        </div>
+        <div class="preference">
+          <div class="check">
+            <input type="checkbox" checked>
+          </div>
+          <div class="text">
+            <span>Include Numbers</span>
+          </div>
+        </div>
+        <div class="preference">
+          <div class="check">
+            <input type="checkbox">
+          </div>
+          <div class="text">
+            <span>Include Symbols</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+
+</body>
+
+</html>
