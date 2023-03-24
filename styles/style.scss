@@ -1,0 +1,123 @@
+body {
+    font-family: "Jetbrains Mono Bold";
+    background: #18171f;
+
+    .container {
+        width: 540px;
+        margin-inline: auto;
+        margin-top: 133px;
+
+        .header {
+            margin-bottom: 31px;
+
+            h1 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+                text-align: center;
+                color: #817D92;
+            }
+        }
+
+        .generated-password {
+            background: #24232C;
+            padding: 20px 30px;
+            margin-bottom: 24px;
+
+            .flex-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .password {
+                    span {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 42px;
+                        color: #E6E5EA;
+                    }
+                }
+
+                .copy {
+                    img {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .generator {
+            padding: 20px 30px;
+            background: #24232C;
+
+            .password-length {
+                margin-bottom: 32px;
+
+                .content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 16px;
+
+                    .text {
+                        span {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: #E6E5EA;
+                        }
+                    }
+
+                    .number {
+                        span {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 32px;
+                            line-height: 42px;
+                            color: #A4FFAF;
+                        }
+                    }
+                }
+
+                .password-length-selector {
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .password-preferences {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .preference {
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+
+                    .check {
+                        input {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                    .text {
+                        span {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: #E6E5EA;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

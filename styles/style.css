@@ -1,0 +1,91 @@
+body {
+  font-family: "Jetbrains Mono Bold";
+  background: #18171f;
+}
+body .container {
+  width: 540px;
+  margin-inline: auto;
+  margin-top: 133px;
+}
+body .container .header {
+  margin-bottom: 31px;
+}
+body .container .header h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #817D92;
+}
+body .container .generated-password {
+  background: #24232C;
+  padding: 20px 30px;
+  margin-bottom: 24px;
+}
+body .container .generated-password .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .container .generated-password .flex-container .password span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: #E6E5EA;
+}
+body .container .generated-password .flex-container .copy img {
+  cursor: pointer;
+}
+body .container .generator {
+  padding: 20px 30px;
+  background: #24232C;
+}
+body .container .generator .password-length {
+  margin-bottom: 32px;
+}
+body .container .generator .password-length .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+body .container .generator .password-length .content .text span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #E6E5EA;
+}
+body .container .generator .password-length .content .number span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: #A4FFAF;
+}
+body .container .generator .password-length .password-length-selector input {
+  width: 100%;
+}
+body .container .generator .password-preferences {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .container .generator .password-preferences .preference {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+body .container .generator .password-preferences .preference .check input {
+  width: 20px;
+  height: 20px;
+}
+body .container .generator .password-preferences .preference .text span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #E6E5EA;
+}/*# sourceMappingURL=style.css.map */
