@@ -53,7 +53,7 @@
       <div class="password-preferences">
         <div class="preference">
           <div class="check">
-            <input type="checkbox" checked>
+            <input type="checkbox" class="preference-checkbox" checked>
           </div>
           <div class="text">
             <span>Include Uppercase Letters</span>
@@ -61,7 +61,7 @@
         </div>
         <div class="preference">
           <div class="check">
-            <input type="checkbox" checked>
+            <input type="checkbox" class="preference-checkbox" checked>
           </div>
           <div class="text">
             <span>Include Lowercase Letters</span>
@@ -69,7 +69,7 @@
         </div>
         <div class="preference">
           <div class="check">
-            <input type="checkbox" checked>
+            <input type="checkbox" class="preference-checkbox" checked>
           </div>
           <div class="text">
             <span>Include Numbers</span>
@@ -77,7 +77,7 @@
         </div>
         <div class="preference">
           <div class="check">
-            <input type="checkbox">
+            <input type="checkbox" class="preference-checkbox">
           </div>
           <div class="text">
             <span>Include Symbols</span>
@@ -90,9 +90,9 @@
         </div>
         <div class="strength">
           <div class="text">
-            <span>MEDIUM</span>
+            <span id="strength-text">MEDIUM</span>
           </div>
-          <div class="strength-tracker bg-medium">
+          <div class="strength-tracker bg-medium" id="strength-tracker">
             <span class="track"></span>
             <span class="track"></span>
             <span class="track"></span>
