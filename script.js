@@ -1,10 +1,10 @@
 // PASSWORD LENGTH INPUT AND LABEL
-const passwordLength = document.querySelector("#password-length")
+const length = document.querySelector("#password-length")
 const input = document.querySelector("#range")
 
-passwordLength.textContent = input.value
+length.textContent = input.value
 input.addEventListener("input", (event) => {
-    passwordLength.textContent = event.target.value
+    length.textContent = event.target.value
 })
 
 // PASSWORD SELECTED VALUE BACKGROUND
@@ -28,3 +28,48 @@ rangeInputs.forEach(input => {
 })
 
 numberInput.addEventListener('input', handleInputChange)
+
+
+// PASSWORD GENERATION
+let rangeInput = document.getElementById("range");
+
+
+// PASSWORD STRENGTH
+var checkboxes = document.querySelectorAll(".preference-checkbox");
+let strengthText = document.getElementById("strength-text");
+let strengthTracker = document.getElementById("strength-tracker");
+let strengthLevel = 3;
+
+
+checkboxes.forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+        if (this.checked) {
+            strengthLevel++;
+        } else {
+            strengthLevel--;
+        }
+        strengthTracker.className = "";
+        strengthTracker.classList.add("strength-tracker");
+        switch (strengthLevel) {
+            case 1:
+                strengthText.innerHTML = "TOO WEAK!"
+                strengthTracker.classList.add("bg-too-weak");
+                break;
+            case 2:
+                strengthText.innerHTML = "WEAK"
+                strengthTracker.classList.add("bg-weak");
+                break;
+            case 3:
+                strengthText.innerHTML = "MEDIUM"
+                strengthTracker.classList.add("bg-medium");
+                break;
+            case 4:
+                strengthText.innerHTML = "STRONG"
+                strengthTracker.classList.add("bg-strong");
+                break;
+            default:
+                strengthText.innerHTML = "HACKABLE"
+                strengthTracker.classList.add("bg-none");
+        }
+    })
+});
