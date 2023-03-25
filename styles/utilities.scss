@@ -50,8 +50,13 @@ input[type="range"] {
         width: 28px;
         border-radius: 50%;
         background: #E6E5EA;
-        cursor: ew-resize;
         transition: background .3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            background: #18171F;
+            border: 2px solid #A4FFAF;
+        }
     }
 
     &::-webkit-slider-runnable-track {
@@ -78,6 +83,10 @@ input[type=checkbox] {
     -webkit-appearance: none;
     opacity: 1;
     border: 2px solid #E6E5EA;
+
+    &:hover {
+        border-color: #A4FFAF;
+    }
 
     &:checked {
         background-color: #A4FFAF;
