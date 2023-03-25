@@ -5,7 +5,11 @@ body {
 body .container {
   width: 540px;
   margin-inline: auto;
-  margin-top: 133px;
+  margin-top: 100px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 body .container .header {
   margin-bottom: 31px;
@@ -35,8 +39,14 @@ body .container .generated-password .flex-container .password span {
   line-height: 42px;
   color: #E6E5EA;
 }
-body .container .generated-password .flex-container .copy img {
+body .container .generated-password .flex-container .copy svg {
   cursor: pointer;
+}
+body .container .generated-password .flex-container .copy svg path {
+  transition: all 0.3s ease;
+}
+body .container .generated-password .flex-container .copy svg:hover path {
+  fill: #FFFFFF;
 }
 body .container .generator {
   padding: 20px 30px;
@@ -72,6 +82,7 @@ body .container .generator .password-preferences {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 32px;
 }
 body .container .generator .password-preferences .preference {
   display: flex;
@@ -88,4 +99,87 @@ body .container .generator .password-preferences .preference .text span {
   font-size: 18px;
   line-height: 24px;
   color: #E6E5EA;
+}
+body .container .generator .password-strength {
+  padding: 20px 30px;
+  background: #18171F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+body .container .generator .password-strength .text span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #817D92;
+}
+body .container .generator .password-strength .strength {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+body .container .generator .password-strength .strength .text span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #E6E5EA;
+}
+body .container .generator .password-strength .strength .strength-tracker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+body .container .generator .password-strength .strength .strength-tracker.bg-too-weak span {
+  background: transparent;
+  border: 2px solid #E6E5EA;
+}
+body .container .generator .password-strength .strength .strength-tracker.bg-too-weak span:first-child {
+  background: #F64A4A;
+}
+body .container .generator .password-strength .strength .strength-tracker.bg-weak span {
+  background: #FB7C58;
+}
+body .container .generator .password-strength .strength .strength-tracker.bg-weak span:nth-child(3) {
+  background: transparent;
+  border: 2px solid #E6E5EA;
+}
+body .container .generator .password-strength .strength .strength-tracker.bg-weak span:last-child {
+  background: transparent;
+  border: 2px solid #E6E5EA;
+}
+body .container .generator .password-strength .strength .strength-tracker.bg-medium span {
+  background: #F8CD65;
+}
+body .container .generator .password-strength .strength .strength-tracker.bg-medium span:last-child {
+  background: transparent;
+  border: 2px solid #E6E5EA;
+}
+body .container .generator .password-strength .strength .strength-tracker.bg-large span {
+  background: #A4FFAF;
+}
+body .container .generator .password-strength .strength .strength-tracker .track {
+  width: 10px;
+  height: 28px;
+}
+body .container .generator .password-button {
+  background: #A4FFAF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 20px;
+  gap: 24px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  border: 2px solid #A4FFAF;
+  transition: all 0.3s ease;
+}
+body .container .generator .password-button:hover {
+  color: #A4FFAF;
+  background: none;
+}
+body .container .generator .password-button:hover .icon svg path {
+  fill: #A4FFAF;
 }/*# sourceMappingURL=style.css.map */
