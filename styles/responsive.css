@@ -1,0 +1,61 @@
+@media (max-width: 576px) {
+  body .container {
+    margin-top: 64px;
+    width: 95%;
+  }
+  body .container .header {
+    margin-bottom: 16px;
+  }
+  body .container .header h1 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  body .container .generated-password {
+    margin-bottom: 16px;
+    padding: 16px;
+  }
+  body .container .generated-password .flex-container .password span {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  body .container .generator {
+    padding: 20px 16px;
+  }
+  body .container .generator .password-length .content {
+    margin-bottom: 8px;
+  }
+  body .container .generator .password-length .content .text span {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  body .container .generator .password-length .content .number span {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  body .container .generator .password-preferences {
+    gap: 16px;
+  }
+  body .container .generator .password-preferences .preference {
+    gap: 20px;
+  }
+  body .container .generator .password-preferences .preference .text span {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  body .container .generator .password-strength {
+    padding: 14px 16px;
+    margin-bottom: 16px;
+  }
+  body .container .generator .password-strength .text span {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  body .container .generator .password-strength .strength .text span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  body .container .generator .password-button {
+    padding-block: 16px;
+    margin-bottom: 0px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

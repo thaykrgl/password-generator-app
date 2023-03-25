@@ -1,0 +1,96 @@
+@media(max-width:576px) {
+    body {
+        .container {
+            margin-top: 64px;
+            width: 95%;
+
+            .header {
+                margin-bottom: 16px;
+
+                h1 {
+                    font-size: 16px;
+                    line-height: 21px;
+                }
+            }
+
+            .generated-password {
+                margin-bottom: 16px;
+                padding: 16px;
+
+                .flex-container {
+                    .password {
+                        span {
+                            font-size: 24px;
+                            line-height: 32px;
+                        }
+                    }
+                }
+            }
+
+            .generator {
+                padding: 20px 16px;
+
+                .password-length {
+                    .content {
+                        margin-bottom: 8px;
+
+                        .text {
+                            span {
+                                font-size: 16px;
+                                line-height: 21px;
+                            }
+                        }
+
+                        .number {
+                            span {
+                                font-size: 24px;
+                                line-height: 32px;
+                            }
+                        }
+                    }
+                }
+
+                .password-preferences {
+                    gap: 16px;
+
+                    .preference {
+                        gap: 20px;
+
+                        .text {
+                            span {
+                                font-size: 16px;
+                                line-height: 21px;
+                            }
+                        }
+                    }
+                }
+
+                .password-strength {
+                    padding: 14px 16px;
+                    margin-bottom: 16px;
+
+                    .text {
+                        span {
+                            font-size: 16px;
+                            line-height: 21px;
+                        }
+                    }
+
+                    .strength {
+                        .text {
+                            span {
+                                font-size: 18px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+
+                .password-button {
+                    padding-block: 16px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
