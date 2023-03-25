@@ -171,6 +171,13 @@ body {
                         align-items: center;
                         gap: 8px;
 
+                        &.bg-none {
+                            span {
+                                background: transparent;
+                                border: 2px solid #E6E5EA;
+                            }
+                        }
+
                         &.bg-too-weak {
                             span {
                                 background: transparent;
@@ -178,6 +185,7 @@ body {
 
                                 &:first-child {
                                     background: #F64A4A;
+                                    border: none;
                                 }
                             }
                         }
@@ -209,7 +217,7 @@ body {
                             }
                         }
 
-                        &.bg-large {
+                        &.bg-strong {
                             span {
                                 background: #A4FFAF;
                             }

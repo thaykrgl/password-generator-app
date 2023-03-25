@@ -132,12 +132,17 @@ body .container .generator .password-strength .strength .strength-tracker {
   align-items: center;
   gap: 8px;
 }
+body .container .generator .password-strength .strength .strength-tracker.bg-none span {
+  background: transparent;
+  border: 2px solid #E6E5EA;
+}
 body .container .generator .password-strength .strength .strength-tracker.bg-too-weak span {
   background: transparent;
   border: 2px solid #E6E5EA;
 }
 body .container .generator .password-strength .strength .strength-tracker.bg-too-weak span:first-child {
   background: #F64A4A;
+  border: none;
 }
 body .container .generator .password-strength .strength .strength-tracker.bg-weak span {
   background: #FB7C58;
@@ -157,7 +162,7 @@ body .container .generator .password-strength .strength .strength-tracker.bg-med
   background: transparent;
   border: 2px solid #E6E5EA;
 }
-body .container .generator .password-strength .strength .strength-tracker.bg-large span {
+body .container .generator .password-strength .strength .strength-tracker.bg-strong span {
   background: #A4FFAF;
 }
 body .container .generator .password-strength .strength .strength-tracker .track {
