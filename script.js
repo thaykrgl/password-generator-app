@@ -4,7 +4,14 @@ var checkboxes = document.querySelectorAll(".preference-checkbox");
 let strengthText = document.getElementById("strength-text");
 let strengthTracker = document.getElementById("strength-tracker");
 let passwordButton = document.getElementById("password-button");
+let generatedPassword = document.getElementById("generated-password");
 let strengthLevel = 3;
+let chars = "";
+let upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let lowerCase = "abcdefghijklmnopqrstuvwxyz";
+let number = "0123456789";
+let symbol = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
+var password = "";
 
 
 // PASSWORD LENGTH INPUT AND LABEL
@@ -74,28 +81,31 @@ checkboxes.forEach(function (checkbox) {
 });
 
 
-// ARRAY SHUFFLE
-String.prototype.shuffle = function () {
-    var a = this.split(""),
-        n = a.length;
-
-    for (var i = n - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var tmp = a[i];
-        a[i] = a[j];
-        a[j] = tmp;
-    }
-    return a.join("");
-}
-
-
 // PASSWORD GENERATION
 passwordButton.addEventListener("click", function () {
-    let password = Math.random().toString(36).slice(2, 7) +
-        Math.random().toString(36)
-        .toUpperCase().slice(2, 7);
+    let passwordLength = document.getElementById("password-length").innerHTML;
+    chars = "";
+    password = "";
+    switch (strengthLevel) {
+        case 1:
+            chars += upperCase;
+            break;
+        case 2:
+            chars += upperCase + lowerCase;
+            break;
+        case 3:
+            chars += upperCase + lowerCase + number;
+            break;
+        case 4:
+            chars += upperCase + lowerCase + number + symbol;
+            break;
+        default:
+    }
 
-    password = password.shuffle();
+    for (let i = 0; i <= passwordLength; i++) {
+        let randomNumber = Math.floor(Math.random() * chars.length);
+        password += chars.substring(randomNumber, randomNumber + 1);
+    }
 
-    console.log(password);
+    generatedPassword.innerHTML = password;
 })
