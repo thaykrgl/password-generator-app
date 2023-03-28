@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/profile/thaykrgl)
-- Live Site URL: [Netlify](https://dictionary-web-app-frontend-mentor.netlify.app/)
+- Live Site URL: [Netlify](https://password-generator-app-mentor.netlify.app/)
 
 ## My process
 
